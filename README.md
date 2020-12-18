@@ -1,5 +1,5 @@
 # Codificacion_Video_S3
-
+![mosaico](https://github.com/JasminaCasado/Codificacion_Video_S3/blob/main/Mosaico.png)
 
 `ffmpeg -i bbb_480.mp4 -i bbb_480_vp8.mkv -i bbb_480_vp9.mkv -i bbb_480_hevc.mkv -filter_complex "[0:v][1:v][2:v][3:v]xstack=inputs=4:layout=0_0|w0_0|0_h0|w0_h0[v]" -map "[v]" mosaico_480.mkv`
 
